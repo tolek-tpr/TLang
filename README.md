@@ -1,3 +1,6 @@
+# Installing
+- Linux - download and run the `install.sh` script (If you get a permission denied error first run `chmod 755 install.sh` and run the file again by using `./install.sh`)
+- Windows - comming soon
 # TLANG
 Tlang is a copy of basic with a few new functions
 

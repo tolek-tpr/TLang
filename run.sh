@@ -1,0 +1,1 @@
+ts-node /home/$USER/.tlang/src/index.ts
