@@ -27,7 +27,8 @@ const E_UNKNOWN_SYMBOL = 1
 const E_ASSIGNMENT_EXPECTED = 2
 
 const parseExpression = (l: string, n: number) => {
-  if (l == '') return
+  if (l == '' || l == " " || l == "   ") return
+  if (l.charAt(0) == "/" && l.charAt(1) == "/") { return }
   const args = l.split(' ')
   const cmd = args[0].trim()
   const rest = l.substring(cmd.length)
@@ -52,8 +53,6 @@ const parseExpression = (l: string, n: number) => {
           }
         }
       }
-      break
-    case '//':
       break
     case 'STRING':
       if (args[2] == '=') {
